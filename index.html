@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Kecepatan Mengetik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⌨️ Tes Kecepatan Mengetik</h1>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="label">Waktu:</span>
+                <span class="value" id="timer">60</span>s
+            </div>
+            <div class="stat">
+                <span class="label">WPM:</span>
+                <span class="value" id="wpm">0</span>
+            </div>
+            <div class="stat">
+                <span class="label">Akurasi:</span>
+                <span class="value" id="accuracy">100</span>%
+            </div>
+        </div>
+
+        <div class="text-display" id="textDisplay">
+            Ketik teks di bawah ini secepat mungkin untuk mengukur kecepatan dan akurasi mengetik Anda. Konsentrasi dan lakukanlah dengan baik. Selamat mencoba!
+        </div>
+
+        <textarea 
+            id="inputText" 
+            class="input-area" 
+            placeholder="Mulai ketik di sini..."
+            disabled>
+        </textarea>
+
+        <div class="buttons">
+            <button id="startBtn" class="btn btn-primary">Mulai</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Hasil Tes</h2>
+            <p>Kecepatan Mengetik (WPM): <strong id="finalWpm">0</strong></p>
+            <p>Akurasi: <strong id="finalAccuracy">0</strong>%</p>
+            <p>Total Karakter: <strong id="totalChars">0</strong></p>
+            <p>Kesalahan: <strong id="errors">0</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
